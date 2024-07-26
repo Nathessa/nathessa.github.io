@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Project: Final Project CIS 130
+    Author:Brittany Greer
+    Date:7/25/2024-->
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+
+    <div class="about-me">
+    <h1>Its nice to meet you!</h1>
+        <p>My name is Brittany Bennington and I am a web developer. My family and I are nestled in the small town of
+            Buffalo. Our household constsits of myself, my husband, two kids and two large dogs.</p>
+        <p>I enjoy video games, tv shows, crafting projects, cosplay, hunting and fishing. My favorite times are playing
+            games with my family, or crawling in my bed and watching Star Trek</p>
+        <p>I have worked on some small web development projects, prodomintly in WordPress, as an independent contractor.
+            That was 10 years ago and I am ready to get back into it. <br />
+            Ideally I'd love to be apart of a small company or work as a small business owner.</p>
+    </div>
+    <!--Slidershow container-->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="cosplay.jpeg" style="width:100%">
+            <div class="text">Myself (center) with friends at Plant Comicon</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="fishing.jpeg" style="width:100%">
+            <div class="text">Fishing with my husband</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="kids.png" style="width:100%">
+            <div class="text">Kids</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="roscoe.jpeg" style="width:100%">
+            <div class="text">Roscoe</div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="ryker.jpeg" style="width:100%">
+            <div class="text">Ryker</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align: center;">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+<script>    
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+
+</html>

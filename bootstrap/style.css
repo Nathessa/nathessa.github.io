@@ -1,0 +1,36 @@
+.nav {
+    margin-top: 100px;
+}
+
+.nav-link {
+    font-size: 40px;
+    color: #212529;
+}
+
+.card {
+    margin: 15px;
+    margin-top: 50px;
+    box-shadow: 5px 10px 8px;
+}
+
+footer { 
+    text-align: center;
+    font-size: 25px;
+    margin: 20px;
+}
+
+footer i {
+    margin-left: 25px;
+
+}
+
+.container {
+    margin-top: 75px;
+    font-size: 25px;
+    display: grid;
+}
+
+.display-1 {
+    text-align: center;
+    margin-top: 25px;
+}

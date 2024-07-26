@@ -1,0 +1,139 @@
+.wrapper {
+    display: grid;
+    width: 100%;
+}
+
+.logo {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+}
+
+.nav-menu ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+    background-color: grey;
+    grid-gap: 20px;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    text-align: center;
+    display: block;
+}
+
+.nav-menu a:visited {
+    color: black;
+}
+
+.welcome-page {
+    display: grid;
+    justify-items: center;
+}
+
+.welcome-page h1 {
+    font-size: 50px;
+}
+
+video {
+    width: 500px;
+}
+
+.reviews {
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.services {
+    display: grid;
+}
+
+.services h1,
+p {
+    text-align: center;
+}
+
+.services h1 {
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.services p {
+    display: inline-block;
+}
+
+.services .service1 {
+    display: grid;
+    grid-template-areas:
+        'list1 list2 list3';
+}
+
+.service2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 1fr);
+    align-self: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service2 p,
+img {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.map {
+    margin: auto;
+    text-align: center;
+}
+
+@media screen and (max-width:700px) {
+    .wrapper {
+        display: grid;
+    }
+
+    .logo {
+        display: grid;
+        max-width: 700px;
+    }
+
+    .nav-menu ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+
+    .nav-menu a {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    video {
+        display: none;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+}

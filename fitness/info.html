@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Brittany Greer
+      Date: 6/25/2024
+      Project: Fit for Fun Fitness Club -->
+    <meta charset="utf-8">
+    <title>Fit for Fun Fitness Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Classes Offered</a></li>
+            <li><a href="info.html">Information</a></li>
+        </ul>
+    </nav>
+
+    <h1>Ready to become a member of the Fit for Fun Fitness Club?</h1>
+    <h2>Signing up is easy!</h2>
+    <p>Fill out the form below and get ready to <B><em>SWEAT!</em></B></p>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>
+                    Contact Information
+                </legend>
+                <label for="fname">
+                    First Name:
+                    <input type="text" name="fname" id="fname" placeholder="Your first name" autofocus required>
+                </label>
+                <label for="lname">
+                    Last Name:
+                    <input type="text" name="lname" id="lname" placeholder="Your last name" required>
+                </label>
+                <label for="email">
+                    Email Address:
+                    <input type="text" name="email" id="email" placeholder="YourEmail@something.com" required>
+                </label>
+                <label for="phone">
+                    Phone Number:
+                    <input type="tel" id="phone" name="phone" placeholder="123-456-7890"
+                        pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                How would you like us contact you?
+                <select name="contact" id="contact">
+                    <option value="call">Call</option>
+                    <option value="Text">Text</option>
+                    <option value="Email">Email</option>
+                    <option value="Hedwig">Hedwig</option>
+                    <option value="smoke">Smoke Signals</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>What classes are you interested in?</legend>
+                <label for="class1">Cross Training</label>
+                <input type="checkbox" id="class1" name="class1" value="cross_training">
+                <label for="class2">Sprint</label>
+                <input type="checkbox" id="class2" name="class2" value="sprint">
+                <label for="class3">Spin</label>
+                <input type="checkbox" id="class3" name="class3" value="spin">
+                <label for="class4">Body Pump</label>
+                <input type="checkbox" id="class4" name="class4" value="body_pump">
+                <label for="class5">Body Combat</label>
+                <input type="checkbox" id="class5" name="class5" value="body_combat">
+                <label for="class6">Step Interval</label>
+                <input type="checkbox" id="class6" name="class6" value="step_interval">
+                <label for="class7">Advanced Cross Training</label>
+                <input type="checkbox" id="class7" name="class7" value="adv">
+                <label for="class8">MixxedFIT</label>
+                <input type="checkbox" id="class8" name="class8" value="mixfitt">
+                <label for="class9">Zumba</label>
+                <input type="checkbox" id="class9" name="class9" value="Zumba">
+                <input type="radio" id="AM" name="time" value="AM">
+                <label for="AM">AM</label>
+                <input type="radio" id="PM" name="time" value="PM">
+                <label for="PM">PM</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Any health issues we should be aware of?
+                </legend>
+                <textarea id="add_info" name="add_info">
+
+                </textarea>
+            </fieldset>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
